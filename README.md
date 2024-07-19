@@ -34,18 +34,39 @@ To manually add a new feature, contact the developer, Rachel - rpierc21@jhu.edu,
     
     3. Find the Tree_ID associated with the new sponsorship.
 
-    4. One record appears with the following attributes: 
-      {"type":"Feature","properties":{"Tree_ID":1,"Diameter1":12,"Diameter2":null,"MorF":"M",
-      "Two_Stem":null,"Health_Status":null,"Symptom":null,"Last_Treated":null,"Note":null,
-      "Species":"White Ash","Age":null,"Sponsored":null,"Sponsor_Name":null,"Sponsor_Date":null,
-      "Tree_Nickname":null,"Link":"insert hyperlink","Payment_ID":null,
-      "Longitude":-77.82096667,"Latitude":39.4211,"Individuals":1},
-      "geometry":{"type":"Point","coordinates":[-77.82096667,39.4211]},"id":0}
+    4. Each record appears with the following attributes: 
+      "Tree_ID":1,            //--> integer
+      "Diameter1":12,         //--> integer
+      "Diameter2":null,       //--> integer
+      "MorF":"M",             //--> "M" or "F"
+      "Two_Stem":null,        //--> boolean
+      "Health_Status":null,   //--> text    
+      "Symptom":null,         //--> text
+      "Last_Treated":null,    //--> date format as "mm-dd-yyyy"
+      "Note":null,            //--> text
+      "Species":"White Ash",  //--> text
+      "Age":null,             //--> integer
+      "Sponsored":null,       //--> booolean "True" or "False
+      "Sponsor_Name":null,    //--> text
+      "Sponsor_Date":null,    //--> date format as "mm-dd-yyyy"
+      "Tree_Nickname":null,   //--> text
+      "Link":"insert hyperlink",
+      "Payment_ID":null,      //--> format as "LastName_TreeID_mm-dd-yyyy"
+      "Longitude":-77.82096667,
+      "Latitude":39.4211,
+      "Individuals":1
     
     5. All text based entries must be wrapped in double quotation marks.
-      All numeric entries, such as a new tree ID, will remain a plain number, such as 74.
-      As trees become sponsored, they will receive treatments, so treatment dates will also need to be updated. 
-      If an entry says 'null' that means there has been no data associated with that record.
+
+    6. All numeric entries, such as a new tree ID, will remain a plain number, (i.e., 74).
+
+    7. Boolean expressions (T/F) should be written out as "True" or "False"
+
+    8. If an entry says 'null' no data associated with that record.
+
+    9. Commit any changes to save and update the dataset.
+
+    10. Map markers will show as red if the "Sponsored" attribute is updated to True.
     
 
 To learn about the specifics on geoJSON objects, visit: https://geojson.org/
