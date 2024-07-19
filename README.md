@@ -26,7 +26,7 @@ https://docs.google.com/spreadsheets/d/1kU1doW71_tCv0dLAGHlmbJjo33HBaUDyrJssSgFM
 **--> geoJSON Dataset:**
 
 This dataset contains a feature collection of the original 73 points, plus a 74th test point.
-To manually add a new feature, contact the developer, Rachel - rpierc21@jhu.edu, or continue with the following instructions:
+To manually add a new feature, contact the developer, Rachel Pierce, or continue with the following instructions:
 
     1. While in the github web interface, click on treedata.geojson.
     
